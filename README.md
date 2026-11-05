@@ -8,4 +8,4 @@
 
 ## 状态
 
-当前为存档初始版本：仓库已建立并完成首次提交，整站内容正在从原分享页逐章提取、核对，完成后会更新 `index.html` 为完整版本。
+完整版本：`index.html` 已从原分享页完整存档（自包含单文件，无外部脚本/样式依赖），并部署于本仓库。经 GitHub Pages 访问：https://859301.github.io/tu-zhuang-zhi-shi-wang-zhan-/
