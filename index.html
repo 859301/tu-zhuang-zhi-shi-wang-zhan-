@@ -478,6 +478,7 @@
           <li><a href="#repair"><span class="no">14B</span><span data-en-html="Repair &amp; Touch-Up ★New">返修与补漆工艺 ★新</span></a></li>
           <li><a href="#costing"><span class="no">14C</span><span data-en-html="Coating Cost Estimating &amp; Calculators ★New">成本测算与计算器 ★新</span></a></li>
           <li><a href="#quickcards"><span class="no">14D</span><span data-en-html="Workshop Quick Cards · Printable ★New">车间速查卡 · 可打印 ★新</span></a></li>
+          <li><a href="#equipfull"><span class="no">14E</span><span data-en-html="Equipment &amp; Auxiliaries Atlas ★New">设备与辅料全谱 ★新</span></a></li>
           <li><a href="#standards"><span class="no">15</span>标准索引与解读</a></li>
           <li><a href="#system"><span class="no">16</span>涂层体系设计 ★新</a></li>
           <li><a href="#cases"><span class="no">17</span>案例分析库</a></li>
@@ -639,6 +640,7 @@
             <div class="kn rust"><b>缺陷诊断 · 形貌倒查机理</b><span>22 个缺陷六段式条目（本轮加量化判据段），库顶有分诊入口：先按出现时机 × 部位缩小候选，再逐条判别。</span><a href="#defects">§10 缺陷诊断库 →</a></div>
             <div class="kn rust"><b>体系设计 · 先定环境再定漆 ★新域</b><span>ISO 12944 环境分类与设计寿命框架、膜厚—年限匹配逻辑、底面合一的适用边界与修补翻新。</span><a href="#system">§16 涂层体系设计 →</a></div>
             <div class="kn rust"><b data-en-html="Repair &amp; Cost · After Damage Occurs ★New">返修与成本 · 损伤之后怎么修、怎么算 ★新域</b><span data-en-html="Repair starts with depth, then area: substrate exposure or rust always restores the anticorrosive layer. Costing starts with theoretical spreading rate, then follows one—and only one—loss-correction path.">返修先看深度、再看面积：见底或见锈一律恢复防腐层；成本先算理论涂布率，再只选一条损耗修正路径，不能叠加。</span><a href="#repair" data-en-html="§14B Repair &amp; Touch-Up →">§14B 返修与补漆 →</a> · <a href="#costing" data-en-html="§14C Cost Estimating →">§14C 成本测算 →</a></div>
+            <div class="kn"><b data-en-html="Equipment &amp; Auxiliaries · The Devices Themselves ★New">设备与辅料 · 设备本体知识 ★新域</b><span data-en-html="A whole-line equipment map, eight segments and device-family entries: guns, robots and cleaning are written first as worked examples; the remaining segments and the auxiliaries index follow the same template.">整线设备地图、八个工段与设备族条目：喷枪、喷涂机器人、清洗三族先行成样板，其余工段与辅料索引按同一模板续补。</span><a href="#equipfull" data-en-html="§14E Equipment &amp; Auxiliaries Atlas →">§14E 设备与辅料全谱 →</a> · <a href="#equipment" data-en-html="§14 Equipment Selection →">§14 设备选型 →</a></div>
             <div class="kn rust"><b>案例复盘 · 推理链合流 ★扩充</b><span>8 个脱敏教学案例，每步标注动用了哪个方法、哪件仪器——把前面所有域串成一次完整分析。</span><a href="#cases">§17 案例分析库 →</a></div>
             <div class="kn"><b>术语库 · 随查随用 ★新域</b><span>87 条核心术语中英对照 + 一句定义，可搜索；站内出现的专业词先在这里对齐口径。</span><a href="#glossary">§19 术语库 →</a></div>
           </div>
@@ -2636,6 +2638,148 @@
             <div class="qc-foot"><span data-en-html="Coating Knowledge Hub · Workshop Quick Card 3">涂装知识站 · 车间速查卡 3</span><span data-en-html="Values follow the cited sections of this site.">数据口径见站内对应章节</span></div>
           </div>
         </section>
+
+        <!-- ================= 14E EQUIPMENT & AUXILIARIES ATLAS ================= -->
+        <section id="equipfull">
+          <h2 class="chap"><span class="no">14E</span><span data-en-html="Equipment &amp; Auxiliaries Atlas: the Whole Line, Device by Device ★New">设备与辅料全谱：整线设备与辅料本体知识 ★新</span></h2>
+          <p class="chap-sub" data-en-html="Division of labour: §14 decides what to buy and how to combine a line (selection and frontiers); this chapter explains the devices themselves — how each family works, its parameter magnitudes, how it fails, and how it links to film quality. Process chapters §05–§08 own the process windows, §10 owns defect diagnosis, §13 owns instruments, §14A owns suppliers and products; this chapter owns the equipment body in between, and every family entry ends with a frontier link so that new devices filed in §18A land on a stable family home.">先分清与 <a href="#equipment">§14</a> 的分工：§14 管<strong>选型决策与前沿</strong>（买什么、怎么搭线、什么正在落地），本章管<strong>设备本体知识</strong>（每个设备族怎么工作、参数是什么量级、怎么坏、坏了在漆膜上长什么样）。与相邻章的边界：<a href="#factors">§05</a>–<a href="#curing">§08</a> 管工艺窗口（参数该定多少），<a href="#defects">§10</a> 管缺陷判别，<a href="#instruments">§13</a> 管检测仪器，<a href="#suppliers">§14A</a> 管供应商与具体产品；本章只管中间的设备本体。本章参数均为工程机械涂装行业的通用量级区间，证据级别逐处标注（B＝教材/行业共识，D＝经验区间，C＝厂商口径并注明）；具体型号参数以厂商 TDS 与样本为准，不写成本章通则。每个设备族条目末尾固定设「前沿衔接」，让 <a href="#frontier">§18A</a> 每日更新抓到的新设备落到稳定的设备族下面，而不是漂在动态里。</p>
+
+          <h3 id="e14-map" data-en-html="14E.0 Line map: follow the part to find the device">14E.0 全线设备地图：顺着工件找设备</h3>
+          <div class="chain" aria-label="涂装线设备流向">
+            <b>上件 · 挂具</b><i>→</i><b>前处理清洗</b><i>→</i><b>水分烘干</b><i>→</i><b>供漆调漆</b><i>→</i><b class="rust">喷涂（喷房内）</b><i>→</i><b>流平</b><i>→</i><b>固化</b><i>→</i><b>冷却检验</b><i>→</i><b>下件</b>
+          </div>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Segment (part flow)">工段（按工件流向）</th><th data-en-html="Device families in this chapter">本章设备族</th><th data-en-html="Cross-links">工艺章互链</th><th data-en-html="Status">状态</th></tr>
+            <tr><td><a href="#e14-convey">输送与挂具</a></td><td>悬挂/地面输送、挂具与接地、上下件工位</td><td><a href="#equipment">§14.2 / 14.6</a></td><td>目录＋导引，条目待补</td></tr>
+            <tr><td><a href="#e14-pretreat">前处理与清洗设备</a></td><td>抛丸/喷砂、<a href="#e14-clean">清洗设备族（样板）</a>、槽体与喷淋系统、水分烘干</td><td><a href="#pretreat">§06 前处理专章</a></td><td>清洗族已成条目</td></tr>
+            <tr><td><a href="#e14-supply">供漆与调漆系统</a></td><td>调漆间、供漆泵与循环管路、过滤与温控、2K 计量混合</td><td><a href="#paintmix">§07 调漆与验收</a> · <a href="#equipment">§14.7</a></td><td>目录＋导引，条目待补</td></tr>
+            <tr><td><a href="#e14-spray">喷涂执行设备</a></td><td><a href="#e14-guns">喷枪族（样板）</a>、<a href="#e14-robots">喷涂机器人族（样板）</a></td><td><a href="#factors">§05 影响因素</a> · <a href="#equipment">§14.1 / 14.7</a></td><td>两族已成条目</td></tr>
+            <tr><td><a href="#e14-booth">喷房与漆雾处理</a></td><td>房体与送排风、干式/湿式漆雾分离、温湿度控制</td><td><a href="#equipment">§14.2 / 14.8</a></td><td>目录＋导引，条目待补</td></tr>
+            <tr><td><a href="#e14-cure">流平与固化设备</a></td><td>流平段、闪干、热风烘干炉、红外/催化红外、粉末固化炉、冷却段</td><td><a href="#curing">§08 干燥与固化</a></td><td>目录＋导引，条目待补</td></tr>
+            <tr><td><a href="#e14-inspect">检测与自动化辅助</a></td><td>在线测厚、机器视觉缺陷检测、色差管理、离线编程软件</td><td><a href="#instruments">§13 仪器库</a> · <a href="#testing">§11</a></td><td>目录＋导引，条目待补</td></tr>
+            <tr><td>下件与包装（旁列）</td><td>冷却后检验、下件工位、防护包装</td><td><a href="#partclass">§09A 验收分级</a></td><td>并入检测段导引</td></tr>
+            <tr><td><a href="#e14-env">环保与公用工程（旁列）</a></td><td>废气治理（转轮＋RTO）、废水与漆渣、粉尘防爆、压缩空气、纯水制备</td><td><a href="#equipment">§14.8</a></td><td>目录＋导引，数值以 §14.8 为准</td></tr>
+          </table></div>
+          <p>读法：先在地图上定位工段，再进设备族条目看本体；条目里的「与漆膜质量的关联」往前链到 <a href="#factors">§05</a> 的参数、往后链到 <a href="#defects">§10</a> 的缺陷形貌，设备问题最终都要落到一张膜上才算讲完。辅料不按工段组织，统一在 <a href="#e14-aux">14E.9 辅料索引</a> 按功能查。</p>
+
+          <h3 id="e14-convey" data-en-html="14E.1 Conveying and hanging: the line's skeleton">14E.1 输送与挂具（目录）</h3>
+          <p>输送决定节拍与工件姿态，挂具决定遮蔽面、吊挂稳定性与静电接地的质量——这两件事看着是「物流」，实际直接写进膜厚分布与漏涂位置。悬挂链适合连续节拍与喷房/烘道穿越，地面链与摩擦输送适合重型大件与变节拍，AGV 适合柔性上下件；挂具设计三要素是承重与重心、接地导通（静电喷涂时挂具即电极回路）、积漆可剥离性，挂具积漆清理是全线最容易被低估的隐性成本（<a href="#equipment">§14.2</a>、<a href="#equipment">§14.6</a> 已有选型要点）。<strong>待补条目：</strong>悬挂输送机与地面输送、挂具设计与接地、挂具积漆清理与剥漆。</p>
+
+          <h3 id="e14-pretreat" data-en-html="14E.2 Pretreatment and cleaning equipment">14E.2 前处理与清洗设备</h3>
+          <p>与 <a href="#pretreat">§06</a> 的分工先说清：§06 管<strong>化学与判定</strong>——脱脂与转化膜的机理、槽液参数、水质与清洁度判据；本段管<strong>设备</strong>——槽体、泵、喷嘴阵列、输送形式与加热过滤如何把化学兑现出来。除锈设备（通过式抛丸机、喷砂房）的本体参数在 <a href="#equipment">§14.1 量级表</a> 与 §06.3 已有锚点，本段先写清洗设备族——它同时管工件清洗与设备清洗两个含义，是前处理段与喷涂段共用的一族。</p>
+
+          <h4 id="e14-clean" data-en-html="14E.2.1 Cleaning equipment family (worked example): parts cleaning and equipment cleaning">14E.2.1 清洗设备族（样板条目）：工件清洗设备 ＋ 设备清洗</h4>
+          <p><strong>① 在整线中的位置与任务。</strong>本族横跨两处：工件清洗在前处理最前端（抛丸/除锈之后、转化膜之前）和喷涂前的最后一道（擦拭/粘尘/离子风除尘）；设备清洗在喷涂段内部与收尾（喷枪、供粉管路、调漆与供漆系统、换色）。两者的共同任务是把「不该在界面上的东西」在进入下一道之前移走——前者决定附着与缩孔的下限，后者决定颗粒、串色与堵枪的下限。</p>
+          <p><strong>② 工作原理与结构 · 工件清洗设备。</strong><strong>喷淋清洗</strong>靠「化学＋热＋冲刷」三者叠加：泵把槽液送到喷嘴阵列，扇形/空心锥喷嘴以低压大流量覆盖工件表面，脱脂剂在 45–60 ℃ 区间皂化/乳化油污（温度带与 <a href="#pretreat">§06</a> 脱脂工艺互证，B 级），冲刷负责把已乳化的油带走而不是把油「洗开抹匀」；多级喷淋之间设沥水段防串槽，末级纯水喷淋控制电导率。<strong>浸渍清洗</strong>靠整槽浸泡＋鼓气搅动或工件摆动，适合腔体与盲孔多的件，但槽液带出量大、节拍被浸泡时间锁死。<strong>超声清洗</strong>在浸渍槽底加换能器，常用 25–40 kHz 频段（B 级），空化气泡在盲孔与螺纹根部爆破剥离油污，适合小件与精密件批量篮洗；大型结构件用不上，疏松铸件表面慎用（空化会放大砂眼周边的疏松）。<strong>高压水清洗</strong>按压力分档用：冲洗级（＜10 MPa，D 级经验带）冲浮灰与松散物；清垢级（10–70 MPa）除焊渣周边氧化皮与顽固污物；除锈/剥漆级（70 MPa 以上乃至超高压）是独立的水射流除锈/剥漆工位，与抛丸分工——抛丸胜在大面积效率与锚纹可控，水射流胜在无粉尘、无磨料嵌入、适合返修剥离与敏感部位。<strong>擦拭与粘尘</strong>是喷涂前最后的人工/半自动关口：擦拭布配专用擦拭剂去指纹与轻油，粘尘布（树脂浸渍纱布）以粘性带走浮尘，离子风枪/静电除尘棒先用电离空气中和工件静电再吹尘——顺序不能反，先吹后中和等于把尘按在表面上。</p>
+          <p><strong>② 工作原理与结构 · 设备清洗。</strong><strong>喷枪清洗机</strong>是密闭箱体内的自动喷淋＋浸泡＋气吹：枪体拆下针阀组件后放入，清洗液由防爆泵循环喷淋，溶剂型线用回收溶剂、水性线用专用水基清洗液并配絮凝分离；密闭与防爆不是配置选项，是溶剂蒸气浓度的必然要求。<strong>管路与调漆系统冲洗</strong>是换色清洗的主体：流程为排空回漆 → 清洗介质顶出残漆 → （长管路）刮管球/管猪清管 → 新漆顶出并排放混色段；冲洗介质用量与<strong>管路总容积近似成正比</strong>，所以短管路、小容积、少死角是换色成本的第一决定因素，远在清洗机理之上。2K 系统多一道纪律：活化期内的漆必须在胶化前强制冲洗排出，否则堵的是整条管（活化期口径见 <a href="#next2k">§04</a>、<a href="#paintmix">§07</a>）。<strong>溶剂回收</strong>用蒸馏回收机把清洗废溶剂蒸出回用，回收率量级约 85–95%（D 级），残渣按危废处置；水性清洗废水进废水站，不进蒸馏。</p>
+          <h4 data-en-html="Key magnitudes: cleaning family">清洗族关键参数量级表</h4>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Device / item">设备/项目</th><th data-en-html="Key parameters">关键参数</th><th data-en-html="Magnitude">经验量级</th><th data-en-html="Signal beyond the band">量级之外的信号</th></tr>
+            <tr><td>喷淋清洗（脱脂段）</td><td>喷淋压力 / 槽液温度 / 喷嘴覆盖</td><td>0.08–0.25 MPa · 45–60 ℃ · 相邻扇面重叠约 1/3（B/D）</td><td>洗后水膜不连续先查喷嘴堵塞与压力衰减，再怀疑脱脂剂（判据见 §06 水膜法）</td></tr>
+            <tr><td>超声清洗</td><td>频率 / 功率密度</td><td>25–40 kHz · 约 10–30 W/L（D）</td><td>盲孔仍带油先查篮筐遮挡与换能器衰减，不是先加时间</td></tr>
+            <tr><td>高压水清洗</td><td>压力分档</td><td>冲洗 ＜10 MPa · 清垢 10–70 MPa · 除锈/剥漆 70 MPa 以上（D）</td><td>除锈级用后无锚纹，涂装前要另行粗化或按 §06 重新核对表面状态</td></tr>
+            <tr><td>换色冲洗</td><td>冲洗介质用量 / 时间</td><td>用量 ≈ 管路容积的 1.5–3 倍 · 单次换色纯冲洗约数分钟至十余分钟（D）</td><td>用量持续超带，先查管路死角与回漆不净，不要先换清洗剂</td></tr>
+            <tr><td>溶剂蒸馏回收</td><td>回收率</td><td>约 85–95%（D）</td><td>回收率下滑先查残渣含水量与蒸馏温度，不是设备「老了」</td></tr>
+          </table></div>
+          <p><strong>④ 选型要点。</strong>先按工件定形式：大平面结构件走喷淋通过式，盲孔小件走超声篮洗，返修剥离单列高压水工位；再按漆的体系定清洗介质（水性线忌把溶剂清洗习惯平移过来）；最后算全成本——清洗段的真实成本在槽液维护、加热能耗与废水处置，不在设备价，选型核对项与 <a href="#equipment">§14.4 决策清单</a> 并用。</p>
+          <p><strong>⑤ 与漆膜质量的关联。</strong>工件侧清洗不净的账最终记在膜上：残油 → <a href="#defects">§10 缩孔/鱼眼</a>与附着力不良；残水/残盐 → 起泡与早期锈蚀；粘尘不到位 → 颗粒/尘点成为外观件的第一大返修源。设备侧清洗不净的账记在下一件上：管路残漆 → 串色与色差、干结漆皮脱落 → 颗粒；枪嘴残漆 → 雾化扇面变形（转下文喷枪族故障表）。判别顺序永远是先设备、后材料：同批件同种缺陷成片出现，先查清洗与设备状态，再怀疑漆。</p>
+          <p><strong>⑥ 维护与易损件。</strong>喷淋段：喷嘴（堵与磨损同列巡检）、过滤袋/滤芯、撇油器、加热管水垢；超声段：换能器与发生器功率衰减按季核对；清洗机：循环泵密封、清洗液浓度与液位、絮凝剂投加；蒸馏机：残渣清理周期与冷凝管。共性一条：清洗设备的维护记录要与缺陷统计同表看，颗粒率爬升而清洗记录空白，本身就是结论。</p>
+          <p><strong>⑦ 常见故障速查。</strong></p>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Symptom">现象</th><th data-en-html="Check first">先查</th><th data-en-html="Action">处置</th></tr>
+            <tr><td>洗后水膜破裂、不连续</td><td>喷嘴堵塞/压力衰减 → 脱脂槽浓度与温度</td><td>疏通或更换喷嘴并复测压力；槽液按 §06 判据补加或更换</td></tr>
+            <tr><td>换色后首件色差、带旧色点</td><td>管路死角与回漆段残漆、刮管球磨损</td><td>延长顶出排放段；换刮管球；仍不行查阀块内漏</td></tr>
+            <tr><td>喷枪洗后仍堵嘴、扇面偏</td><td>针阀组件是否拆洗、气帽气孔漆垢</td><td>拆件超声/浸泡清洗气帽，忌用铁丝捅气孔（扩孔即报废）</td></tr>
+            <tr><td>粘尘后颗粒不降反升</td><td>粘尘布是否超期复用、擦拭剂是否含硅</td><td>粘尘布按件数定额更换；含硅助剂全线禁用并追溯来源</td></tr>
+          </table></div>
+          <p><strong>⑧ 前沿衔接。</strong>清洗的前沿不在「洗得更强」而在「少洗甚至免洗」：本站已入库的 Henkel APNR 2.0 免洗附着力促进剂（见 <a href="#pretreat">§06</a> 与 <a href="#frontier">§18A</a>）把清洗与转化两步并作一步，是这一族当前最实的增量；干冰清洗与激光清洗在除锈/剥漆端处于导入期（定性判断，尚无工程机械产线量级数据入站），后续动态按 §18A 机制先落本族再上台账。</p>
+
+          <h3 id="e14-supply" data-en-html="14E.3 Paint supply and mixing systems">14E.3 供漆与调漆系统（目录）</h3>
+          <p>供漆系统是喷枪的「血压与血质」：压力脉动直接变成膜厚脉动，温度漂移变成黏度漂移，过滤失效变成颗粒。构成包括调漆间（温控、防爆、称量与配比）、供漆单元（压力罐、隔膜泵、柱塞泵、齿轮泵之争在脉动与剪切）、循环供漆管路（主管循环＋支管取漆，防沉降防温升）、过滤与稳压、2K 计量混合单元（比例泵/齿轮计量＋静态混合，见 <a href="#equipment">§14.7</a> 已有整合讨论）。涂料状态本身的验收与贮存纪律在 <a href="#paintmix">§07</a>，本段只管设备。<strong>待补条目：</strong>供漆泵族（隔膜/柱塞/齿轮对照）、循环供漆管路设计、2K 计量混合机、供漆温控。</p>
+
+          <h3 id="e14-spray" data-en-html="14E.4 Application equipment: guns and robots">14E.4 喷涂执行设备</h3>
+          <p>整线的手艺最终收束在这一段：上游把漆备好、把件洗净，最后由喷枪或机器人把漆以受控的液滴谱送到表面。本段先写两族样板——喷枪族讲「液滴怎么生成」，机器人族讲「轨迹怎么组织」；两族在自动线上合体（机器人腕部装的就是喷枪族的自动型），分开读、合起来用。</p>
+
+          <h4 id="e14-guns" data-en-html="14E.4.1 Spray-gun family (worked example): air, air-assisted, airless, electrostatic, powder">14E.4.1 喷枪族（样板条目）：空气 / 混气 / 无气 / 静电 / 粉末</h4>
+          <p><strong>① 在整线中的位置与任务。</strong>喷枪是喷涂段的末端执行器，上承供漆系统的压力与流量，下接流平与固化——雾化质量与扇面形状在这里一次定型，后段只能补救不能重造。它的任务是把连续漆流变成粒径受控、空间分布受控的液滴云，并在工件表面拼出均匀湿膜；膜厚分布的第一责任人不是烘道，是枪。</p>
+          <p><strong>② 工作原理与结构。</strong>按雾化机理分五支。<strong>空气喷枪</strong>：压缩空气在气帽中心孔与环形孔喷出，与针阀开启放出的漆流相撞撕裂成雾；扇形由气帽两翼的侧孔气流压扁成椭圆。供漆三式——重力式（漆杯在上，靠重力＋微虹吸，出漆量小、换色快，修补与小件用）、吸上式（下壶虹吸，大杯但出漆随液位漂移）、压送式（压力罐或泵供漆，出漆稳定、连续生产与自动线只用这式）。HVLP 是空气喷枪的低压分支：气帽处压力压到约 0.07 MPa 量级（B 级，行业定义口径），以大风量低速度换低过喷。<strong>混气喷枪（空气辅助无气）</strong>：先由 4–12 MPa 液压力经小喷嘴初步成型，再用少量雾化空气修整扇面两端的「拖尾」，是雾化细度与成膜效率的折中。<strong>无气喷枪</strong>：10–25 MPa 液压迫漆过扇形小孔，靠压差释放与液流内紊流自雾化，全程无空气参与，液滴较粗但动量足、一次成膜厚；喷嘴是带扇面角度的硬质合金件，反转喷嘴可快速清堵。<strong>静电喷枪</strong>在雾化之上叠加电场：空气静电＝空气雾化＋电晕充电（针电极约 −40~−85 kV，D 级）；<strong>旋杯静电</strong>＝高速旋转杯头（气动涡轮，约 1 万–6 万 rpm 量级，D 级）以离心力把漆甩成细雾，整形空气收束杯口雾形，高压电场使液滴带电奔向接地工件，背面环抱是其省漆的来源。静电的边界条件必须先讲：法拉第笼效应使深腔、内角处电场趋零，那里仍然漏涂；水性漆导电，内加电路线必须先解决供漆隔离（绝缘供漆或电压隔离装置）或改走外电极充电——两条路线与隔离要求见 <a href="#equipment">§14.7</a>。<strong>粉末喷枪</strong>没有液体雾化：电晕枪以枪内高压发生器（约 30–100 kV 可调，D 级）在枪口形成电晕场，粉末流经带电后吸附接地工件；摩擦枪靠粉末与枪内绝缘管壁摩擦起电（带正电），无外电场，法拉第效应弱、深腔补喷占优，但带电量随粉末配方与湿度漂移、出粉稳定性弱于电晕枪。供粉由流化桶＋文丘里粉泵完成，粉末在管内是气固两相流，「出粉均匀」本身就是一半的工艺。</p>
+          <h4 data-en-html="Key magnitudes: gun family">喷枪族关键参数量级表</h4>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Type">类型</th><th data-en-html="Key parameters">关键参数量级</th><th data-en-html="Transfer efficiency">传递效率量级</th><th data-en-html="Best fit / boundary">适配与边界</th></tr>
+            <tr><td>空气喷枪（重力/压送）</td><td>喷嘴 1.3–1.8 mm（面漆）· 雾化压力 0.25–0.45 MPa · 喷距 15–25 cm（B，含 §14.1 量级表）</td><td class="num">约 30–40%</td><td>雾化最细、外观上限最高；过喷最大，水性漆雾干喷明显，外观件与小批量</td></tr>
+            <tr><td>HVLP</td><td>气帽压力约 0.07 MPa · 出漆量偏小（B）</td><td class="num">约 55–65%（D）</td><td>过喷与反弹少；大面积厚膜产能不足，不做结构件主力</td></tr>
+            <tr><td>混气喷枪</td><td>喷嘴 0.28–0.43 mm · 液压 4–12 MPa · 辅助气 0.05–0.25 MPa · 喷距 25–35 cm（B/D）</td><td class="num">约 60–75%</td><td>膜厚与外观的平衡点，工程机械结构件常用；液圧/气压比要逐漆摸窗口</td></tr>
+            <tr><td>无气喷枪</td><td>喷嘴 0.28–0.53 mm · 液压 10–25 MPa · 喷距 30–40 cm（B/D）</td><td class="num">约 50–70%</td><td>一次成膜厚、出漆量大，大件厚膜防腐主力；雾化粗，外观件不用</td></tr>
+            <tr><td>空气静电喷枪</td><td>电压约 40–85 kV · 喷距 20–30 cm（D）</td><td class="num">约 55–75%（D，随件形浮动）</td><td>环抱救复杂件死角；水性漆先定隔离方案，深腔法拉第漏涂仍在</td></tr>
+            <tr><td>旋杯静电（自动）</td><td>转速约 1 万–6 万 rpm · 电压 60–100 kV · 出漆 100–600 mL/min（D）</td><td class="num">约 70–90%（D，平板件取高值，复杂铸件显著回落）</td><td>自动线主力，雾化与效率兼得；杯头与整形空气维护门槛高，小批量不经济</td></tr>
+            <tr><td>粉末喷枪（电晕）</td><td>电压 30–100 kV 可调 · 出粉 50–450 g/min（D）</td><td class="num">一次上粉约 60–80%，回收后综合利用率可达 95% 以上（B/D）</td><td>无溶剂、厚膜一次成型；厚边反电离（橘皮/针孔）与法拉第深腔是两道固有坎</td></tr>
+            <tr><td>粉末喷枪（摩擦）</td><td>无外加电压 · 出粉稳定性弱于电晕（B）</td><td class="num">与电晕同量级，深腔件更高</td><td>深腔、补喷、网格件；对粉末配方与湿度敏感，需逐粉验证</td></tr>
+          </table></div>
+          <p><strong>④ 选型要点。</strong>顺序不能反：先按外观等级与膜厚定雾化机理（外观件向细雾化走，厚膜防腐向无气/混气走），再按批量与换色频次定供漆方式（压送＋小容积管路对频繁换色友好），最后才对品牌型号。水性静电是独立评估项——先定隔离路线再选枪，这条在 <a href="#equipment">§14.4 决策清单</a> 里已有纪律，本族只补一句：粉末线选型先看回收系统与换色方式（旋风＋滤芯回收对多色共线不友好），枪本身反而排最后。</p>
+          <p><strong>⑤ 与漆膜质量的关联。</strong>雾化过粗 → <a href="#defects">§10 橘皮</a>与流平差；枪距过近＋出漆过大 → 流挂；雾化气压过高/喷距过大 → 干喷、粗糙与过喷漆雾落尘；扇面两端拖尾或中间过厚 → 膜厚条纹与露底（先查喷嘴磨损与气帽孔堵塞，别先动配方）；静电法拉第漏涂 → 边角/焊缝早期锈蚀的源头之一（§10 同名条目）；粉末反电离 → 厚涂区橘皮与针孔。共同的判别口径：凡是「形状跟着扇面走」的缺陷，先查枪，再查漆（因素框架见 <a href="#factors">§05</a>）。</p>
+          <p><strong>⑥ 维护与易损件。</strong>液体枪：喷嘴—针阀成套磨损（单独换一件会破坏配合）、气帽气孔漆垢、密封圈与针阀弹簧；旋杯：杯头边缘磕碰即换、涡轮轴承按时数管理、整形空气环积漆；粉枪：放电电极针烧蚀、粉泵文丘里喉管磨损、供粉管老化起静电。共性纪律：清洗用本章 <a href="#e14-clean">清洗族</a> 的方法，忌金属丝通气孔——气孔扩一个丝，扇面废一把枪。</p>
+          <p><strong>⑦ 常见故障速查。</strong></p>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Symptom">现象</th><th data-en-html="Check first">先查</th><th data-en-html="Action">处置</th></tr>
+            <tr><td>扇面两端拖尾、中间厚</td><td>喷嘴磨损（无气/混气）→ 雾化气压与辅助气配比</td><td>换喷嘴并复核扇面纸试喷；混气回调气/液比</td></tr>
+            <tr><td>出漆脉动、枪口「跳枪」</td><td>供漆脉动（泵/稳压）→ 针阀行程与密封</td><td>先测枪尾压力波动定供漆，再拆枪；顺序反了会白拆</td></tr>
+            <tr><td>静电吸附差、背面不上漆</td><td>工件接地链（挂具积漆绝缘）→ 电压与喷距</td><td>测挂具—工件导通并清挂具；再核电压设定</td></tr>
+            <tr><td>粉末吐粉、出粉脉冲</td><td>流化桶流化状态 → 粉泵喉管磨损 → 粉末受潮</td><td>调流化气压；换喉管；粉末过筛并查仓储湿度</td></tr>
+            <tr><td>旋杯雾化突然变粗</td><td>转速是否达设定（涡轮供气）→ 杯头积漆</td><td>查涡轮气压与轴承状态；停机清杯头，忌带漆硬刮</td></tr>
+          </table></div>
+          <p><strong>⑧ 前沿衔接。</strong>本族是 §18A 新设备动态最常落点的一族：已入库的 Total Finishing Zeus 粉末喷涂机（盒式/料斗/重力杯三供粉）与 A.S.P. 水性静电枪（隔离涂料舱路线）见 <a href="#equipment">§14.7</a> 加注与 <a href="#frontier">§18A</a> 条目——对照本族参数表读，Zeus 的重力杯版对应「小批量频繁换色」格，A.S.P. 对应「水性静电先定隔离」那条纪律。更远一层，无过喷涂装（喷射打印式涂布头）若落地，改写的正是本族的雾化前提，进展见 <a href="#equipment">§14.3</a> 第一条。</p>
+
+          <h4 id="e14-robots" data-en-html="14E.4.2 Spray-robot family (worked example): 6-axis robots, reciprocators, dedicated machines">14E.4.2 喷涂机器人族（样板条目）：六轴机器人 / 往复机 / 专机</h4>
+          <p><strong>① 在整线中的位置与任务。</strong>本族是喷涂段的轨迹执行端：把喷枪族的雾化能力，按编程轨迹以恒定枪距、枪速与重叠率铺满工件表面，并与输送链速同步（随动跟踪）。它替代的不是「喷漆工」这个人，而是人工在枪距与节拍上不可避免的漂移；对多品种的轮系与结构件，它的价值排序是：一致性 ＞ 覆盖死角 ＞ 省人。</p>
+          <p><strong>② 工作原理与结构。</strong><strong>六轴喷涂机器人</strong>为喷涂环境专用设计：整机防爆（正压防爆外壳/本质安全型设计，须按喷房危险区划分选认证等级）、手腕中空走管走气（供漆管、雾化气、静电高压线全走臂内，避免外置管线包与工件干涉和摆动甩漆）、臂展约 2–3 m 量级、腕部负载需同时算上枪/杯与满管漆重（D 级）。行程不够时加第七轴地轨或升降柱，代价是随动同步标定更复杂。<strong>往复机</strong>是单轴或双轴（垂直/水平）的直线往复＋枪架，配光栅/编码器识别工件有无与宽度自动启停枪，轨迹只有一维，胜在便宜、可靠、好维护，平面类与规则回转件够用。<strong>专机与固定枪架</strong>把轨迹让工件自己走：转台回转＋固定枪（轮系小件的经典组合）、龙门多轴机床式喷涂等，换型靠换程序段或夹具，柔性最差但节拍与重复性最好。三者的共同上层是<strong>编程</strong>：在线示教（逐点教，停线占产）与离线编程（CAD 模型＋喷涂仿真生成轨迹，见 <a href="#equipment">§14.3</a> 第四条）之争，本质是停线成本与模型精度之争；轨迹质量由三要素联动决定——<strong>枪速、扇面重叠（通常约 50% 搭接，D 级）、流量</strong>：枪速变，流量必须同比跟随才能恒膜厚，这套联动在示教时就要标定，不是喷起来再调。</p>
+          <h4 data-en-html="Key magnitudes: robot family">机器人族关键参数量级表</h4>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Item">项目</th><th data-en-html="Key parameters">关键参数</th><th data-en-html="Magnitude">经验量级</th><th data-en-html="Signal beyond the band">量级之外的信号</th></tr>
+            <tr><td>喷涂轨迹</td><td>枪速 / 扇面重叠 / 喷距（静电旋杯）</td><td>约 0.3–1.2 m/s · 重叠约 50% · 20–30 cm（D）</td><td>膜厚条纹先查重叠与链速同步，再查供漆——机器人本体重复精度（±0.1 mm 量级）极少是膜厚漂移的主因</td></tr>
+            <tr><td>换色与清洗集成</td><td>换色阀块位置 / 冲洗程序段</td><td>阀块越贴近枪端，混色段越短；单次换色约 30–120 s 量级（D，随管路容积）</td><td>换色时间超带先查管路容积与死角（同清洗族口径），不是先加溶剂压力</td></tr>
+            <tr><td>随动跟踪</td><td>链速编码器同步 / 触发分区</td><td>触发点按工件轮廓分区设定（D）</td><td>件首尾膜厚系统性偏差，先查编码器同步与挂具晃动</td></tr>
+            <tr><td>防爆与安全</td><td>防爆认证 / 联锁</td><td>喷房内按危险区选型；门禁、火焰探测、静电接地链与机器人使能联锁（B，原则口径）</td><td>任何单点联锁旁路都是停线整改项，不存在「临时凑合」</td></tr>
+          </table></div>
+          <p><strong>④ 选型要点。</strong>先按件谱定柔性等级：单一大批量平面件，往复机/专机的全成本最低，别为柔性买单；多品种复杂铸锻件才轮到六轴机器人，且要把离线编程与打样验证写进采购（用你的件、你的漆，验收膜厚分布与单耗，口径同 <a href="#equipment">§14.4</a>）。防爆认证与喷房分区必须先于品牌比选核对——认证不匹配的机器人，再便宜也不能进房。</p>
+          <p><strong>⑤ 与漆膜质量的关联。</strong>轨迹重叠不当 → 平行条纹状膜厚不均（形貌跟着轨迹走，是本族缺陷的指纹，判别见 <a href="#defects">§10</a>）；随动同步误差 → 同件首尾厚薄系统性相反；示教点稀疏＋插补圆滑 → 棱边过喷、平面中部漏喷并存；换色冲洗程序不净 → 批量首件颗粒与串色（与 <a href="#e14-clean">清洗族</a> 共担）。反过来，批量膜厚缓慢漂移而轨迹无异常时，九成是供漆温压漂移，不要先怀疑机器人——本体的重复精度比工艺波动高一个数量级。</p>
+          <p><strong>⑥ 维护与易损件。</strong>减速机与腕部润滑按时数更换；臂内管线（漆管/气管/高压线）是隐性易损件，弯折寿命到期成批换，不要等漏漆；旋杯/自动枪的清洗对接站（自动清洗工位）定位精度按月标定；程序与参数<strong>版本管理</strong>是本族特有的维护项——轨迹程序、流量标定表、换色程序都要留版本与回滚点，一次误改能废一班产品。</p>
+          <p><strong>⑦ 常见故障速查。</strong></p>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Symptom">现象</th><th data-en-html="Check first">先查</th><th data-en-html="Action">处置</th></tr>
+            <tr><td>膜厚呈等间距平行条纹</td><td>轨迹行距/重叠率 → 链速波动</td><td>复核行距与扇面宽匹配；测链速稳定性</td></tr>
+            <tr><td>同件首尾膜厚系统性偏差</td><td>随动编码器同步 → 挂具摆动</td><td>重标同步原点；挂具防摆与吊点检查</td></tr>
+            <tr><td>换色后批量首件颗粒/串色</td><td>冲洗程序段是否完整执行 → 阀块死角</td><td>调取换色日志核对程序；拆查阀块与短接死角</td></tr>
+            <tr><td>轨迹正常但批量膜厚缓漂</td><td>供漆温度/压力漂移（非机器人项）</td><td>转供漆系统排查（§14E.3 待补，先按 §14.7 口径）；机器人本体最后查</td></tr>
+            <tr><td>频繁干涉报警/急停</td><td>管线包与工件/挂具干涉、奇异点位形</td><td>离线仿真复核轨迹；调整示教点绕开奇异位形</td></tr>
+          </table></div>
+          <p><strong>⑧ 前沿衔接。</strong>本族的前沿集中在「编程」而非「手臂」：机器人＋3D 视觉扫描自动生成轨迹、喷涂仿真与数字孪生先行验证（<a href="#equipment">§14.3</a> 第二、四条），解决的正是多品种小批量「编程比喷涂还慢」的痛点；行业落地量级可对照 <a href="#equipment">§14.5</a> 中联重科机器人自动喷粉的公开记录（单件时间与人员变化，二手来源引用时注明）。新机型动态按 §18A 机制先落本族。</p>
+
+          <h3 id="e14-booth" data-en-html="14E.5 Spray booths and overspray separation">14E.5 喷房与漆雾处理（目录）</h3>
+          <p>喷房同时做三件事：用受控气流把过喷漆雾带离工件、给喷涂提供温湿度稳定的空气、把漆雾在排出前分离下来。房体形式（横流/下吸/水帘柜）与分离路线（湿式水帘/文丘里 vs 干式纸盒/惰性粉预涂）的选型账在 <a href="#equipment">§14.2</a>，漆雾分离效率的证据口径与环保数值在 <a href="#equipment">§14.8</a>，本段不重复；这里只登记结构位置：断面风速量级 0.3–0.6 m/s（见 §14.1 量级表），落尘颗粒增多先查正压与过滤段压差。<strong>待补条目：</strong>干式喷房与漆雾分离、湿式喷房（水帘/文丘里）、送排风与温湿度控制。</p>
+
+          <h3 id="e14-cure" data-en-html="14E.6 Levelling and curing equipment">14E.6 流平与固化设备（目录）</h3>
+          <p>设备构成：流平段（常温晾置，给湿膜流平与溶剂/水分初步逸出的时间与洁净）、闪干段（低温大风量排湿，水性线的生死段）、热风循环烘干炉（分区控温＋件温曲线管理）、红外/催化红外（预热与辅助，厚壁件防结皮）、粉末固化炉（件温 149–200 ℃ 带，见 <a href="#quickcards">§14D 速查卡</a>）、冷却段（长度即节拍的一部分）。温度制度与固化判据归 <a href="#curing">§08</a>，炉体选型要点在 <a href="#equipment">§14.2</a>；本段的立场只有一句：烘干炉的关键参数是分区能力与件温均匀性（目标 ±5 ℃ 量级），不是最高温度。<strong>待补条目：</strong>热风烘干炉与分区设计、红外与催化红外加热、粉末固化炉、冷却段。</p>
+
+          <h3 id="e14-env" data-en-html="14E.7 Environmental and utility systems">14E.7 环保与公用工程（目录）</h3>
+          <p>这一段是整线的「后台」：废气治理（沸石转轮浓缩＋RTO、活性炭路线之争）、废水与漆渣处理（湿式喷房的必然产物）、粉尘防爆（粉末线的硬约束）、压缩空气站（雾化气的源头，含水含油直接写进漆膜）、纯水制备（末道水洗与水性漆稀释的源头）。可用数值本站只认已核口径：粉尘防爆以 GB 15607-2023 原文为准、转轮＋RTO 数值与漆雾分离的旁证口径都在 <a href="#equipment">§14.8</a>，本段不另立数字。<strong>待补条目：</strong>废气治理设备（转轮/RTO 本体）、废水与漆渣处理、压缩空气净化、纯水设备。</p>
+
+          <h3 id="e14-inspect" data-en-html="14E.8 Inspection and automation aids">14E.8 检测与自动化辅助（目录）</h3>
+          <p>与 <a href="#instruments">§13</a> 的分工：§13 管单件仪器（测什么、怎么校准），本段管<strong>装进线里的检测系统</strong>——在线膜厚测量（烘前湿膜/烘后干膜）、机器视觉缺陷在线检测（颗粒、流挂、漏喷、色差的在线识别与统计回推，落地要点在样本库与标注一致性，见 <a href="#equipment">§14.3</a> 第三条）、自动识别与程序调用（读工件身份自动切换机器人程序与供漆参数）、下线检验与包装工位。检测判据归 <a href="#testing">§11</a> 与 <a href="#partclass">§09A</a>。<strong>待补条目：</strong>在线测厚系统、机器视觉缺陷检测、自动识别与配方管理。</p>
+
+          <h3 id="e14-aux" data-en-html="14E.9 Auxiliaries index: look up by function, not by segment">14E.9 辅料索引：按功能查，不按工段查</h3>
+          <p>辅料的共同点是「便宜、量小、但用错了代价记在整批膜上」，所以不按工段散列，统一按功能建索引。每个辅料条目今后只写<strong>选用四件事</strong>：① 规格分级（这个辅料按什么分档）② 选用判据（什么情况选哪档）③ 更换判据（用到什么程度必须换，看什么信号）④ 用错代价（会在 <a href="#defects">§10</a> 变成哪个缺陷）。本期先立索引与模板，条目正文待补。</p>
+          <div class="tbl-wrap"><table>
+            <tr><th data-en-html="Category">功能类</th><th data-en-html="Representative items">代表条目（待补正文）</th><th data-en-html="The four selection points, in one line each">选用四件事 · 本类要点</th></tr>
+            <tr><td>清洗类</td><td>设备清洗溶剂、水基喷枪清洗液、擦拭剂、槽液维护用絮凝/撇油剂</td><td>分级：溶剂型/水基与漆体系绑定；判据：与所洗漆的相容性优先于清洗强度；更换：浓度与含漆量双信号；代价：残液串入供漆＝整批颗粒与缩孔</td></tr>
+            <tr><td>过滤类</td><td>喷房顶棉与进风过滤、漆雾过滤（纸盒/漆雾毡）、涂料过滤网与滤芯、压缩空气过滤</td><td>分级：按过滤精度与阻力曲线；判据：精度够用即可，过细先堵为敬；更换：看压差不看日历；代价：顶棉失效＝落尘颗粒，漆滤失效＝堵枪与颗粒</td></tr>
+            <tr><td>粘尘擦拭类</td><td>粘尘布、无尘擦拭布、离子风除尘耗材</td><td>分级：粘性档位与材质（忌掉絮）；判据：喷涂前最后一道专用，不与粗擦混用；更换：按件数定额，粘性衰减即换；代价：超期复用＝二次污染源，颗粒不降反升</td></tr>
+            <tr><td>遮蔽防护类</td><td>遮蔽纸/膜、耐高温遮蔽胶带、螺纹孔塞与孔盖、工件防护套</td><td>分级：按耐温（烘道温度）与耐溶剂分档；判据：过烘道件必须用高温档；更换：一次性为原则；代价：胶带残胶与过喷边界毛刺＝返修工时，孔塞脱落＝螺纹上漆报废</td></tr>
+            <tr><td>挂具工装耗材</td><td>挂具退漆剂（化学/热解耗材）、导电钩与接地触点、绝缘护套、吊具防滑件</td><td>分级：按挂具材质与漆种；判据：退漆方式不伤挂具导电面；更换：触点积漆厚度信号；代价：接地不良＝静电漏涂与上粉差（链喷枪族故障表）</td></tr>
+            <tr><td>喷房维护类</td><td>喷房粘尘剂（房壁粘性涂层）、喷房保护膜、水帘水处理剂（消粘剂/絮凝剂）</td><td>分级：干式房与湿式房两套；判据：与房型绑定，消粘剂按漆种选型；更换：粘尘剂按饱和度（粘性失效）信号；代价：房壁积漆脱落＝大颗粒落尘，湿式消粘失效＝漆渣成团堵循环</td></tr>
+          </table></div>
+          <p>本章待补清单（按优先级）：供漆泵族与循环管路 → 烘干炉族 → 干式喷房 → 输送与挂具体系 → 在线检测系统 → 辅料六类条目正文。续补沿用本章模板与证据口径；每日更新的新设备动态按 GOAL 分发规则先落对应设备族，再入 <a href="#frontier">§18A</a> 台账。</p>
+        </section>
+
 
         <!-- ================= 09 STANDARDS ================= -->
         <section id="standards">
