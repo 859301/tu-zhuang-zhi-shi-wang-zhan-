@@ -1,0 +1,54 @@
+name: site-health
+
+# 每 6 小时巡检两个线上站是否可达，结果写入 health/status.json 并提交回仓库。
+# 涂装站另校验完整字节数，防止页面被截断或推错文件时无人察觉。
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/site-health.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Probe sites
+        id: probe
+        run: |
+          mkdir -p health
+          NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          COAT_CODE=$(curl -sL -o /tmp/coat.html -w "%{http_code}" --max-time 60 https://859301.github.io/tu-zhuang-zhi-shi-wang-zhan-/ || echo 000)
+          COAT_BYTES=$(wc -c < /tmp/coat.html || echo 0)
+          PIEZO_CODE=$(curl -sL -o /dev/null -w "%{http_code}" --max-time 60 https://piezo.yangtokent.com || echo 000)
+          COAT_OK=false
+          if [ "$COAT_CODE" = "200" ] && [ "$COAT_BYTES" -gt 1500000 ]; then COAT_OK=true; fi
+          PIEZO_OK=false
+          if [ "$PIEZO_CODE" = "200" ]; then PIEZO_OK=true; fi
+          cat > health/status.json <<EOF
+          {"checked_at_utc": "$NOW", "coating": {"http": $COAT_CODE, "bytes": $COAT_BYTES, "ok": $COAT_OK}, "piezolit": {"http": $PIEZO_CODE, "ok": $PIEZO_OK}}
+          EOF
+          cat health/status.json
+          echo "coat_ok=$COAT_OK" >> "$GITHUB_OUTPUT"
+          echo "piezo_ok=$PIEZO_OK" >> "$GITHUB_OUTPUT"
+
+      - name: Commit status
+        run: |
+          git config user.name "site-health-bot"
+          git config user.email "actions@github.com"
+          git add health/status.json
+          git diff --cached --quiet || git commit -m "health: site probe $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
+
+      - name: Fail if any site is down
+        if: steps.probe.outputs.coat_ok != 'true' || steps.probe.outputs.piezo_ok != 'true'
+        run: |
+          echo "::error::Site health check failed - see health/status.json"
+          exit 1
